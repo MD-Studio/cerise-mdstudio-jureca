@@ -19,7 +19,7 @@ docker pull mdstudio/cerise-mdstudio-jureca:develop
 ### Start it
 
 ```bash
-docker run --name=cerise-mdstudio-das5 -p 29593-29594:29593-29594 --env CERISE_USERNAME=<username> --env CERISE_PASSWORD=<password> mdstudio/cerise-mdstudio-jureca:develop
+docker run --name=cerise-mdstudio-jureca -p 29593-29594:29593-29594 --env CERISE_USERNAME=<username> --env CERISE_PASSWORD=<password> mdstudio/cerise-mdstudio-jureca:develop
 ```
 This will give a warning about the Slurm version not being supported, which
 you can safely ignore.
