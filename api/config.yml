@@ -1,0 +1,13 @@
+compute-resource:
+  refresh: 10
+  files:
+    protocol: sftp
+    location: jureca.fz-juelich.de
+    path: /homeb/ecam/$CERISE_USERNAME/.cerise
+
+  jobs:
+    protocol: ssh
+    location: jureca.fz-juelich.de
+    scheduler: slurm
+    cwl-runner: $CERISE_API_FILES/cerise/cwltiny.py
+    slots-per-node: 4
